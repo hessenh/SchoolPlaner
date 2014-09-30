@@ -1,0 +1,21 @@
+<template name="editSubChapterItem">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-lg-10">
+				<h2>Edit Sub Chapter</h2>
+				{{#each selected_subChapter}}
+					<input type="text" id="newSubChapter-subChapterTitle" class="form-control" value="{{subChapter}}"><br>
+					<textarea class="form-control" rows="3" id="summary" value="{{summary}}"></textarea>
+					<br>
+					<div class="btn-group btn-group-justified">
+					  <a href="#" class="btn btn-primary submitSubChapter">Save</a>
+					  <a href="#" class="btn btn-danger deleteSubChapter">Delete</a>
+					  <a href="#" class="btn btn-default canelSubChapter">Cancel</a>
+					  
+					</div>
+	
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</template>

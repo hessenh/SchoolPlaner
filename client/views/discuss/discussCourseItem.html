@@ -1,0 +1,19 @@
+<template name="discussCourseItem">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-lg-10">
+				{{#each selected_discussCourseItem}}
+					<h1>{{courseTitle}}</h1>	
+				{{/each}}
+				<div class="btn-group btn-group-justified">
+					  <a href="#" class="btn btn-success newQuestion">New Question!</a>
+					  <a href="#" class="btn btn-default "></a>
+					  <a href="#" class="btn btn-primary backBtn">Back</a>
+				</div><br>
+				{{#each questionList}}
+					<a class="btn btn-default btn-lg btn-block" id="selected_question">{{questionTitle}}</a>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</template>

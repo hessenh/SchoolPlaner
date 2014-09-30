@@ -1,0 +1,30 @@
+<template name="taskItem">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-lg-10">
+				{{#each selected_taskItem}}
+					<div class="jumbotron jumbotron-task">
+						<div class="jumbotron-task-header">
+							<h2>{{taskTitle}}</h2>
+						</div>
+						<div class="jumbotron-task-content">
+							<h3>{{taskInfo}}</h3><br>
+							<h4>Due Date: {{taskDueDate}}</h4>
+						</div>
+						<div class="jumbotron-task-footer">
+							<a class="btn btn-primary editTask">Edit</a>
+							{{#if knowIttask}}
+								<a class="btn btn-primary dontDoneItTask">Haven't done it?</a><br>
+							{{else}}
+								<a class="btn btn-primary doneItTask">Done it?</a><br>
+							{{/if}}
+
+						</div>
+					
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+
+</template>

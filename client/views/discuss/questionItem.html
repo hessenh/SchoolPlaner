@@ -1,0 +1,55 @@
+<template name="questionItem">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-lg-10">
+				{{#each selected_question}}
+					<div class="jumbotron jumbotron-question">
+						<div class="jumbotron-question-header">
+							<h2>{{questionTitle}}</h2>
+						</div>
+						<div class="jumbotron-question-content">
+							<h3>{{questionText}}</h3><br>
+						</div>
+					</div>
+
+					<div class="btn-group btn-group-justified">
+					 <a href="#" class="btn btn-success addComment">Comment!</a>
+					 {{#if ownsQuestion}}
+					 	<a href="#" class="btn btn-danger deleteQuestion ">Delete</a>
+					 {{else}}
+					 	<a href="#" class="btn btn-default "></a>
+					 {{/if}}
+					 <a href="#" class="btn btn-primary backBtn">Back</a>
+				</div>
+				{{/each}}
+				
+				<br>
+				{{#each question_comment}}
+					<div class="jumbotron jumbotron-comment">
+						<div class="jumbotron-comment-header">
+								<h4 class="score">Score: {{score}}</h4>
+						</div>
+
+						<div class="jumbotron-comment-content">
+							<h3>{{comment}}</h3>
+							<h4 class="username">{{user}}</h4><br>
+						</div>
+						<div class="jumbotron-comment-footer">
+							<div class="btn-group btn-group-justified">
+								{{#if ownsComment}}
+									<a href="#" class="btn btn-danger deleteComment">Delete</a>
+								{{else}}
+								  	<a href="#" class="btn btn-default commentPluss">+1</a>
+									<a href="#" class="btn btn-default commentMinus">-1</a>
+								{{/if}}
+							</div>
+						</div>
+					</div><br>						
+				{{/each}}
+				<br>
+				<input type="text" id="newComment" class="form-control" placeholder="Write comment here">
+				<br>
+			</div>
+		</div>
+	</div>
+</template>

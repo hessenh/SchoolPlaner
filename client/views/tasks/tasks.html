@@ -1,0 +1,7 @@
+<template name="tasks">
+	{{#each taskList}}
+		<a class="btn btn-default btn-lg btn-block" id="selected_task">{{taskTitle}}</a>
+	{{/each}}
+	<a class="btn btn-success btn-lg btn-block addTaskBtn">Add Task!</a>
+	<!-- <a class="btn btn-danger btn-lg btn-block removeTaskBtn">Delete Task!</a> -->
+</template>

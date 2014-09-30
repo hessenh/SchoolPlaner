@@ -1,0 +1,25 @@
+<template name="recovery">
+	{{#if resetPassword}}
+		<form id="new-password" action="action">
+			<div class="row">
+				<div class="col-md-4 col-lg-4">
+					<h1>Password  Change</h1>
+					<input type="text" class="form-control" id="new-password-password"/>
+					<input type="submit" class="form-control" value="Change Password"/>
+				</div>
+			</div>
+		</form>
+	{{else}}
+		<form id="recovery-form" action="action">
+			<div class="row">
+				<div class="col-md-4 col-lg-4">
+					<h1>Forgot password</h1>
+					<input type="text" class="form-control" id="recovery-email"/>	
+					<input type="submit" class="form-control" value="Send Reset Instructions"/>
+				</div>
+			</div>
+		</form>
+	{{/if}}
+
+
+</template>

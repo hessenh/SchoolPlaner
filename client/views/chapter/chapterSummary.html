@@ -1,0 +1,23 @@
+<template name="chapterSummary">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-lg-10">
+				{{#each chapterSummary}}
+					<div class="jumbotron jumbotron-chapterSummary">
+						<div class="jumbotron-chapterSummary-header">
+							<h2>{{subChapter}}</h2>
+						</div>
+						<div class="jumbotron-chapterSummary-content">
+							<h3>{{summary}}</h3><br>
+						</div>
+						<div class="jumbotron-chapterSummary-footer">
+						
+
+						</div>
+					
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</template>

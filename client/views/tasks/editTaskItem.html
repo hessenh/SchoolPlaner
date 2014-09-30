@@ -1,0 +1,16 @@
+<template name="editTaskItem">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-lg-10">
+			{{#each selected_taskItem}}
+				<h2>Edit Task</h2>
+				<input type="text" id="taskTitle" class="form-control" value="{{taskTitle}}"><br>
+				<textarea class="form-control" rows="3" id="taskInfo" value="{{taskInfo}}"></textarea><br>
+				<input type="text" id="taskDueDate" class="form-control" value="{{dueDate}}"><br>
+
+				<button type="submit" class="btn btn-primary submitTask">Submit</button>
+			{{/each}}
+			</div>
+		</div>
+	</div>
+</template>

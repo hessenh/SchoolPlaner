@@ -1,0 +1,19 @@
+<template name="chapterItem">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-lg-10">
+				{{#each selected_chapter}}
+					<h1>Chapter - {{chapter}}</h1>
+					
+					{{>subChapterItem}}<br>
+					
+					<div class="btn-group btn-group-justified">
+					  <a href="#" class="btn btn-success addSubChapter">Add subchapter!</a>
+					  <a href="#" class="btn btn-default chapterSummary">Show Summary!</a>
+					  <a href="#" class="btn btn-primary backChapter">Back</a>
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</template>

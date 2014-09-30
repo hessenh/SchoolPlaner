@@ -1,0 +1,13 @@
+<template name="discuss">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-lg-10">
+				<h1>Discuss</h1>
+				{{#each courseList}}
+					<a class="btn btn-default btn-lg btn-block" id="selected_course">{{courseTitle}}</a>
+				{{/each}}
+				<a class="btn btn-success btn-lg btn-block addCourseBtn">Add Course!</a>
+			</div>
+		</div>
+	</div>
+</template>
