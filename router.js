@@ -26,6 +26,8 @@ Router.map(function() {
 	this.route('discussCourseItem');
 	this.route('questionItem');
 
+	this.route('about');
+
 });
 
 Router.configure({

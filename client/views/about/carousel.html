@@ -1,0 +1,34 @@
+<template name="carousel">
+	<div id="myCarousel" class="carousel slide">
+		<ol class="carousel-indicators">
+		    <li data-target="myCarousel" data-slide-to="0" class="active"></li>
+		    <li data-target="myCarousel" data-slide-to="1"></li>
+		    <li data-target="myCarousel" data-slide-to="2"></li>    
+		</ol>
+		<div class="carousel-outer">
+			<a class="close"></a>
+			<div class="carousel-wrapper centered">
+			    <div id="my-carousel" class="carousel slide">
+					<div class="carousel-inner">
+					<!-- Carousel items -->  	
+						<div class="item active">
+						   <img src="/pictures/1.jpg" alt="" />
+						</div>
+
+						<div class="item">
+						   <img src="/pictures/2.jpg" alt="" />
+						</div>
+
+						<div class="item">
+						   <img src="/pictures/3.jpg" alt="" />
+						</div>
+					</div>
+				    <!-- Carousel nav -->
+				    <a class="carousel-control left" href="" data-slide="prev">&lsaquo;</a>
+				    <a class="carousel-control right" href="" data-slide="next">&rsaquo;</a>
+			    </div>  		
+			</div>	
+		</div>
+	</div>
+
+</template>
