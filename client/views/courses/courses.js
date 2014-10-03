@@ -7,6 +7,12 @@ Template.courses.events({
 		Router.go("courseItem");
 		console.log(Session.get("selected_course"));
 
+	},
+	'click .helpButton':function(e,t){
+		$('.blurContent').addClass('blurClass');
+		$('.navbar-fixed-top').addClass('blurClass');
+		$(".jumbotron-about").fadeIn(600);
+
 	}
 })
 

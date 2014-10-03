@@ -6539,3 +6539,25 @@ textarea:focus {
   text-align: right;
   
 }
+.jumbotron-about{
+  display: none;
+  cursor: pointer;
+  z-index: 3;
+  width: 50%;
+  position: fixed;
+  left: 50%;
+  margin: 0 0 0 -25%;
+}
+.jumbotron-about .close{
+
+}
+.photo{
+  width: 100%;
+  position: relative;
+}
+.helpButton{
+  margin-top: 70px;
+}
+.blurClass{
+  opacity:0.1;
+}

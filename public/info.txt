@@ -1,0 +1,6 @@
+<h2>Courses</h2>
+					<p>Everyone can relate to the problem of keeping track of courses and tasks.<br>
+
+					On this site you could write a summary of each chapter(or subchapters). <br>
+					When your finals starts, you mark the chapters you know. In that way, you could in an interactiv way keep track on your progress!</p>
+					<br>

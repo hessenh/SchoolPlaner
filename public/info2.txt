@@ -1,0 +1,15 @@
+<div class="jumbotron">
+					<h3>You now see your selected course. You could add chapters, add tasks and view your progress on the top bar.</h3>
+					<br>
+					<img class="photo" src="/pictures/courseItem.jpg" alt="" /><br>
+					<h3>When you have written some summaries, you could hit the "show summary", and a complete summary from the course is presented!</h3>
+				</div>
+				<br>
+				<div class="jumbotron">
+					<h2>Discuss</h2>
+					<p>Everyone can relate to the problem of keeping track of courses and tasks.<br>
+
+					On this site you could write a summary of each chapter(or subchapters). <br>
+					When your finals starts, you mark the chapters you know. In that way, you could in an interactiv way keep track on your progress!</p>
+					<p><a class="btn btn-primary btn-lg">Learn more</a></p>
+				</div>
